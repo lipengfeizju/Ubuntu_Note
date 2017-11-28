@@ -21,6 +21,7 @@ sudo apt-get install privoxy -y
 sudo gedit /etc/privoxy/config 
 >forward-socks5 / localhost:1080 .
 >listen-address localhost:8118
+
 sudo gedit /usr/local/bin/proxy
 >#!/bin/bash
 >export http_proxy=http://localhost:8118

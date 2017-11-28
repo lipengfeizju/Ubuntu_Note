@@ -26,6 +26,7 @@ sudo gedit /usr/local/bin/proxy
 >export http_proxy=http://localhost:8118
 >export https_proxy=http://localhost:8118
 >$*
+
 sudo chmod +x /usr/local/bin/proxy 
 
 # Test the proxy

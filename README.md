@@ -16,3 +16,8 @@ Open a new terminal
 ``` bash
 git config --global credential.helper store
 ```
+
+Reference 
+[1](https://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
+
+[2](http://www.jianshu.com/p/f54053afecf2)

@@ -1,3 +1,19 @@
+# Set the static IP in Ubuntu
+```shell
+ifconfig
+sudo gedit /etc/network/interfaces
+```
+>...
+>auto enp***
+>iface enp*** inet static 
+>address 10.76.******
+>netmask 255.255*****
+>gateway 10.****
+>dns-nameservers 10.10.****
+
+```shell
+   sudo vi /etc/NetworkManager/NetworkManager.conf
+```
 # Install shadowsocks in Ubuntu
 sudo apt-get install python-pip
 sudo apt-get install git

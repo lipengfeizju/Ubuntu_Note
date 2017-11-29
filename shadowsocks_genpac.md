@@ -32,3 +32,4 @@ sudo chmod +x /usr/local/bin/proxy
 
 # Test the proxy
 proxy wget google.com
+

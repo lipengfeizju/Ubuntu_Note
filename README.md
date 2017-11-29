@@ -3,15 +3,16 @@ Some notes about Ubuntu Installation.
 
 [Guide](https://coding.net/help/doc/project/markdown.html) in MarkDown Grammar
 
+## Save the passward
 use *touch* to create ~/.git-credentials, edit 
 
-''' shell
+``` shell
 touch .git-credentials
 vim .git-credentials
 https://{username}:{password}@github.com
-'''
+```
 
 Open a new terminal
-''' bash
+``` bash
 git config --global credential.helper store
-'''
+```

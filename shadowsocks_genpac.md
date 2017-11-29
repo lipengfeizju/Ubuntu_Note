@@ -4,17 +4,17 @@ ifconfig
 sudo gedit /etc/network/interfaces
 ```
 >...
-
+>
 >auto enp***
-
+>
 >iface enp*** inet static 
-
+>
 >address 10.76.******
-
+>
 >netmask 255.255*****
-
+>
 >gateway 10.****
-
+>
 >dns-nameservers 10.10.****
 
 ```shell
@@ -33,7 +33,7 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 sudo pip install genpac
 genpac --proxy="SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
 >if that doesn't work, try this one
-
+>
 >genpac --proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
 
 # Start

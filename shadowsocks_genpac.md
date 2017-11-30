@@ -19,6 +19,8 @@ sudo gedit /etc/network/interfaces
 
 ```shell
    sudo vi /etc/NetworkManager/NetworkManager.conf
+   >[ifupdown]
+   >    managed=true
 ```
 # Install shadowsocks in Ubuntu
 sudo apt-get install python-pip

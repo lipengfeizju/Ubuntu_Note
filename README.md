@@ -34,3 +34,8 @@ sudo gedit /etc/default/grub
 sudo update-grub
 
 [GRUB 2 modification](http://blog.csdn.net/lu_embedded/article/details/44353499)
+
+# Copy a file via SSH
+```shell
+scp /home/test/item.txtroot@192.168.1.129:/etc/test
+'''

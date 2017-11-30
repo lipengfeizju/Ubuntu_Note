@@ -38,4 +38,4 @@ sudo update-grub
 # Copy a file via SSH
 ```shell
 scp /home/test/item.txtroot@192.168.1.129:/etc/test
-'''
+```

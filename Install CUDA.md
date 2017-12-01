@@ -40,3 +40,5 @@ sudo gedit ~/.bashrc
 >export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 >
 >export CUDA_HOME=/usr/local/cuda-8.0
+
+A good [tutorial](https://web.stanford.edu/class/cs20si/syllabus.html) in tensorflow and deep learning

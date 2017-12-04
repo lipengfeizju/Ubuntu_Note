@@ -35,7 +35,9 @@ sudo update-grub
 
 [GRUB 2 modification](http://blog.csdn.net/lu_embedded/article/details/44353499)
 
-# Copy a file via SSH
+## Copy a file via SSH
 ```shell
 scp /home/test/item.txtroot@192.168.1.129:/etc/test
 ```
+
+## Some important [notes](https://www.cnblogs.com/wangrx/p/5907013.html) about vim

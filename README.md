@@ -9,6 +9,8 @@ Some notes about Ubuntu Installation.
 use *touch* to create ~/.git-credentials, edit 
 
 ``` shell
+git config --global user.email "lipengfeizju@gmail.com"
+git config --global user.name "Pengfei Li"
 touch .git-credentials
 vim .git-credentials
 https://{username}:{password}@github.com

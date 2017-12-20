@@ -43,3 +43,16 @@ scp /home/test/item.txtroot@192.168.1.129:/etc/test
 ```
 
 ## Some important [notes](https://www.cnblogs.com/wangrx/p/5907013.html) about vim
+
+## Build ORB-SLAM
+[link](https://github.com/raulmur/ORB_SLAM2)
+* install eigen
+```shell
+    sudo apt-get install libeigen3-dev 
+    sudo cp -r /usr/include/eigen3/unsupported  /usr/local/include/
+
+```
+* if there is error about opencv, then use this 
+```shell
+    -DCUDA_USE_STATIC_CUDA_RUNTIME=false
+```

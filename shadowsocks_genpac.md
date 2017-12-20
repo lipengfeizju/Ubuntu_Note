@@ -22,6 +22,10 @@ sudo gedit /etc/network/interfaces
    >[ifupdown]
    >    managed=true
 ```
+If the computer can't connect to WWW then try this command
+```shell
+   sudo /etc/init.d/networking restart
+```
 # Install shadowsocks in Ubuntu
 sudo apt-get install python-pip
 

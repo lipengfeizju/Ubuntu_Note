@@ -56,3 +56,20 @@ scp /home/test/item.txtroot@192.168.1.129:/etc/test
 ```shell
     -DCUDA_USE_STATIC_CUDA_RUNTIME=false
 ```
+## Install the vnc program
+```shell
+sudo apt install x11vnc -y
+sudo x11vnc -storepasswd /etc/x11vnc.pass 
+vi  /lib/systemd/system/x11vnc.service
+```
+content 
+```
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /etc/x11vnc.pass -rfbport 5900 -shared
+[Install]
+WantedBy=multi-user.target
+```

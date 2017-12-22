@@ -26,3 +26,9 @@ expect "*$"
 interact
 ```
 
+## 重要文件存放位置
+/usr/local/bin/  用户可执行文件，可使用如下命令创建软链接
+```shell
+sudo ln -s /xxx/xxx/xxx.sh /usr/local/bin/xxx
+```
+/var/cache/apt/archives 存放已经缓存的文件

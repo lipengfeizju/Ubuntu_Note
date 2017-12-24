@@ -5,7 +5,7 @@ Some notes about Ubuntu Installation.
 
 [commonly used commands](http://blog.csdn.net/wojiaopanpan/article/details/7286430)
 
-## Save the passward
+## Save the passward in Git
 use *touch* to create ~/.git-credentials, edit 
 
 ``` shell
@@ -56,6 +56,7 @@ scp /home/test/item.txtroot@192.168.1.129:/etc/test
 ```shell
     -DCUDA_USE_STATIC_CUDA_RUNTIME=false
 ```
+# Useful Softwares
 ## Install the vnc program
 ```shell
 sudo apt install x11vnc -y
@@ -78,3 +79,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 ```
+## Several Useful DVD writing software
+[link](http://www.linuxidc.com/Linux/2013-10/91380.htm)

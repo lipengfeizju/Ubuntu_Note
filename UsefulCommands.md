@@ -5,7 +5,7 @@ tar czf - ****.tar |split -b 100m - ***.tar.gz
 解压缩分卷
 cat test1.tar.gza* >myzip.tar.gz
 tar xzvf myzip.tar.gz 
-合并分卷
+压缩文件
 tar czvf test.tar.gz example_1.py example_2.py test1.py 
 解压缩
 tar zxvf FileName.tar.gz

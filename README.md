@@ -41,6 +41,11 @@ sudo update-grub
 ```shell
 scp /home/test/item.txtroot@192.168.1.129:/etc/test
 ```
+## NetWork Reboot
+If the computer can't connect to WWW then try this command
+```shell
+   sudo /etc/init.d/networking restart
+```
 
 ## Some important [notes](https://www.cnblogs.com/wangrx/p/5907013.html) about vim
 

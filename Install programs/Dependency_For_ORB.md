@@ -1,7 +1,9 @@
 ## Install `Eigen3`
+```
 sudo apt-get install libeigen3-dev
 sudo cp -r  /usr/include/eigen3/Eigen  /usr/local/include/
 sudo cp /usr/local/include/eigen3/unsupported/ /usr/local/include/
+```
 ## Install `OpenCV 2`
 ```
 sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg62-dev libtiff5-dev cmake libswscale-dev libjasper-dev

@@ -114,7 +114,16 @@ ${OpenCV_LIBRARIES}
 Set opencv DIR
 ```
 set ( OpenCV_DIR   "/media/harddrive/software/opencv-2.4.13.4/build")
+find_package(OpenCV REQUIRED)
 ```
-
+If you encounter `No rule to make target 'opencv_calib3d-NOTFOUND', needed by '../devel/lib/cv_pose/cv_qt_ros'`
+It is caused by the opencv 3 in ROS couldn't be found in this way.
+Try to modify the `/opt/ros/kinetic/share/OpenCV-3.3.1/OpenCVConfig.cmake`
+```
+...
+#set(OpenCV_LIBS ${OpenCV_LIBS} "${__cvcomponent}")
+set(OpenCV_LIBS ${OpenCV_LIBS} "${OpenCV_INSTALL_PATH}/lib/lib${__cvcomponent}3.so")
+...
+```
 [reference1](https://github.com/raulmur/ORB_SLAM2)
 [reference2](https://stackoverflow.com/questions/13919128/cmake-set-linker-flags-for-boost)

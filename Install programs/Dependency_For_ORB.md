@@ -2,7 +2,7 @@
 ```
 sudo apt-get install libeigen3-dev
 sudo cp -r  /usr/include/eigen3/Eigen  /usr/local/include/
-sudo cp /usr/local/include/eigen3/unsupported/ /usr/local/include/
+sudo cp -r  /usr/include/eigen3/unsupported/ /usr/local/include/
 ```
 ## Install `OpenCV 2`
 ```

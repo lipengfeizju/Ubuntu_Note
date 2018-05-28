@@ -88,7 +88,7 @@ target_link_libraries( myApp
     ${LIBS_TO_LINK}
 )
 ```
-## If you are using ORB-SLAM
+## If you are using ORB-SLAM1
 ### Solve the undefined `FAST` algorithm
 ```
 #include <opencv2/opencv.hpp>
@@ -124,6 +124,20 @@ Try to modify the `/opt/ros/kinetic/share/OpenCV-3.3.1/OpenCVConfig.cmake`
 #set(OpenCV_LIBS ${OpenCV_LIBS} "${__cvcomponent}")
 set(OpenCV_LIBS ${OpenCV_LIBS} "${OpenCV_INSTALL_PATH}/lib/lib${__cvcomponent}3.so")
 ...
+```
+If you want to build this in Cmake instead of rosbuild, you should comment all the `rosbuild` args
+then add this
+```
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  cv_bridge
+  image_transport
+  sensor_msgs
+  pcl_conversions
+  pcl_ros
+)
 ```
 [reference1](https://github.com/raulmur/ORB_SLAM2)
 [reference2](https://stackoverflow.com/questions/13919128/cmake-set-linker-flags-for-boost)

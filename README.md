@@ -89,5 +89,15 @@ sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 ```
+
+系统装好后如果一直闪烁，使用以下命令
+```shell
+
+sudo add-apt-repository ppa:bumblebee/stable
+sudo apt-get update
+sudo apt-get install bumblebee bumblebee-nvidia
+sudo reboot
+```
+
 ## Several Useful DVD writing software
 [link](http://www.linuxidc.com/Linux/2013-10/91380.htm)

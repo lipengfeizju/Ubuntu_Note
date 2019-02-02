@@ -1,3 +1,5 @@
+git config credential.helper store
+
 ### vim color theme
 mkdir .vim/colors/
 

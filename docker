@@ -1,0 +1,27 @@
+交互式容器
+docker run -i -t ubuntu:15.10 /bin/bash
+后台模式
+docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+docker ps
+docker logs 2b1b7a428627
+端口映射
+docker run -d -p 8200:5000 training/webapp python app.py
+端口信息
+docker port frosty_babbage
+docker logs -f frosty_babbage
+
+显卡docker
+nvidia-docker run -ti bvlc/caffe:gpu caffe --version
+挂载系统文件
+nvidia-docker run -ti -v /export/home/pli32/workspace/:/share bvlc/caffe:gpu /bin/bash
+生成镜像（image）
+nvidia-docker commit c034528e3327 pli32/geo_con
+
+存储镜像
+https://my.oschina.net/zjzhai/blog/225112
+增加tag
+nvidia-docker tag 418c8352dc2d pli32/geo_con:dev
+删除tag
+docker rmi -f hub.doge.com/ubuntu:latest
+
+nvidia-docker run -ti -p 8200:8200 -v /export/home/pli32/workspace/:/share pli32/geo_con:dev /bin/bash

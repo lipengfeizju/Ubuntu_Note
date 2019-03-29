@@ -1,0 +1,10 @@
+useradd pengfei
+passwd pengfei
+usermod -s /bin/bash pengfei
+mkdir /home/pengfei
+usermod -d /home/pengfei pengfei
+su pengfei
+vim /etc/sudoers 
+    ## Allow root to run any commands anywhere
+    root    ALL=(ALL)     ALL
+    tommy   ALL=(ALL)     ALL

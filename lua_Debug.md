@@ -1,5 +1,9 @@
 ## Lua Debug Package
 [detailed tutorial](https://github.com/Atcold/torch-Developer-Guide/blob/master/MobDebug/README.md)
+git clone https://github.com/pkulchenko/MobDebug
+luarocks install luasocket
+cp mobdebug.lua ~/torch/install/share/lua/5.1/
+
 ```
 th -e "require('mobdebug').listen()"
 

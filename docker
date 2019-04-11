@@ -25,3 +25,17 @@ nvidia-docker tag 418c8352dc2d pli32/geo_con:dev
 docker rmi -f hub.doge.com/ubuntu:latest
 
 nvidia-docker run -ti -p 8200:8200 -v /export/home/pli32/workspace/:/share pli32/geo_con:dev /bin/bash
+
+
+torch镜像准备
+
+docker pull nightseas/cuda-torch:latest
+sudo apt-get install libhdf5-serial-dev hdf5-tools tmux
+git clone https://github.com/deepmind/torch-hdf5
+cd torch-hdf5
+luarocks make hdf5-0-0.rockspec LIBHDF5_LIBDIR="/usr/lib/x86_64-linux-gnu/"
+
+
+
+
+

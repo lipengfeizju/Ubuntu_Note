@@ -1,0 +1,46 @@
+
+初始化
+git init 
+git remote add origin https://gitlab.com/PengfeiLi/learn-git.git
+git push -u origin master
+放弃当前更改
+git checkout -- readme.txt
+强制回滚
+git reset --hard bff44
+比较变化
+git diff HEAD -- readme.txt
+日志显示
+git log --pretty=oneline
+新建分支
+git checkout -b dev
+　或者
+　　git branch dev
+　　git checkout dev
+删除分支
+git branch -d dev
+新建远程分支
+git checkout -b dev
+git push origin dev:odev
+删除分支
+git push origin :odev
+git push origin --delete odev
+切换默认分支
+git branch --set-upstream-to=origin/odev dev
+git pull
+git push origin HEAD:odev
+
+下载
+git checkout -b dev origin/develop
+
+
+git checkout . #本地所有修改的。没有的提交的，都返回到原来的状态
+git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
+git reset --hard HASH #返回到某个节点，不保留修改。
+git reset --soft HASH #返回到某个节点。保留修改
+git clean -df #返回到某个节点
+
+或者
+git checkout . && git clean -xdf
+
+存储密码
+git config credential.helper store

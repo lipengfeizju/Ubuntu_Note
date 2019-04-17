@@ -3,6 +3,8 @@
 git init 
 git remote add origin https://gitlab.com/PengfeiLi/learn-git.git
 git push -u origin master
+撤销stage
+git reset HEAD <file>
 放弃当前更改
 git checkout -- readme.txt
 强制回滚

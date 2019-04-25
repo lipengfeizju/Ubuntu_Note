@@ -5,6 +5,10 @@ Some notes about Ubuntu Installation.
 
 [commonly used commands](http://blog.csdn.net/wojiaopanpan/article/details/7286430)
 
+## Disable all the autosuspend mode
+```shell
+for i in /sys/bus/usb/devices/*/power/autosuspend; do echo -1 >$i; done
+```
 ## Save the passward in Git
 use *touch* to create ~/.git-credentials, edit 
 

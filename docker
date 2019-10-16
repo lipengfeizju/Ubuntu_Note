@@ -35,7 +35,13 @@ git clone https://github.com/deepmind/torch-hdf5
 cd torch-hdf5
 luarocks make hdf5-0-0.rockspec LIBHDF5_LIBDIR="/usr/lib/x86_64-linux-gnu/"
 
+运行docker
+```
+$ nvidia-docker run -ti \
+--name kris_keypoint \
+-p 8200:8200 \
+--mount type=bind,source=/work_10t/pli32/docker_share,target=/share \
+diva_geo:latest /bin/bash
 
-
-
+```shell
 

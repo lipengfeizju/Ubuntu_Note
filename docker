@@ -55,7 +55,7 @@ diva_geo:latest /bin/bash
 sudo docker run -it \
 --name occ_net \
 --gpus all \
--p 8700:8700\
+-p 8700:8700 \
 --mount type=bind,source=/work_4t/data_share,target=/share \
 occlusion_net:latest /bin/bash
 

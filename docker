@@ -59,3 +59,5 @@ sudo docker run -it \
 --mount type=bind,source=/work_4t/data_share,target=/share \
 occlusion_net:latest /bin/bash
 
+运行新版docker
+docker run -it --name pcdet_test --gpus all -p 8700:8700 --mount type=bind,source=/work_4t_1/data_share,target=/share pcdet_10_2:latest /bin/bash

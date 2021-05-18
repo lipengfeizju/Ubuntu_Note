@@ -1,0 +1,25 @@
+1.To confirm the presence of the block volume
+lsblk
+fdisk -l 
+
+2.To confirm the disk is empty
+sudo file -s /dev/xvdf
+
+3. Create a partition table
+fdisk /dev/xvdf
+You will see the following, type in the command as follows
+   1. Command (m for help): n 
+   2. Select (default p): p
+   3. Partition number (1-4, default 1):1
+   4. Command (m for help): w
+Please don't forget the last step, otherwise your change will not be written to the disk
+
+5.After creating the partition table, you need to update the kernel with the changes using the partprobe command
+sudo partprobe /dev/xvdf
+
+6.Next, we need to format the partition before mounting it.
+sudo mkfs /dev/xvdf -t ext4
+(if it says there is already one there, just let it proceed)
+
+7. Finally, just mount the disk to the position you like
+sudo mount /dev/xvdf /new_position
